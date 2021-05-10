@@ -1,4 +1,8 @@
+const body=document.getElementsByTagName('body')[0]
 
+function cloaeopensidebar(){
+    body.classList.toggle('sidebar-expand');
+}
 
 window.onclick=function(event){
     openCloseDropdown(event)

@@ -88,6 +88,7 @@ body {
   padding: 0px;
   font-family: "Poppins", sans-serif;
 }
+/*Start Header Arera*/
 .header {
   display: flex;
   box-shadow: var(--box-shadow);
@@ -242,3 +243,75 @@ body {
 #user-menu .dropdown-menu-link span {
   font-size: 20px;
 }
+/*End Header Area*/
+/*Start Sidebar Area*/
+.sidebar {
+  width: 60px;
+  height: 100vh;
+  background-color: var(--light-background);
+  position: fixed;
+  overflow: hidden;
+  z-index: 100;
+  margin-top: 2px;
+  box-shadow: var(--box-shadow);
+  transition: width 0.5s;
+}
+.sidebar:hover {
+  width: 250px;
+}
+.sidebar-nav {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+}
+.sidebar-nav-item {
+  width: 100%;
+}
+.sidebar-nav-link {
+  display: flex;
+  align-items: center;
+  color: var(--main-color);
+  text-decoration: none;
+}
+.sidebar-nav-link div {
+  min-width: 60px;
+  height: 45px;
+  position: relative;
+}
+.sidebar-nav-link i {
+  font-size: 20px;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  color: var(--danger-color);
+  transform: translate(-50%, -50%);
+}
+.sidebar-nav-link:hover {
+  background: var(--light-second-color);
+  color: white;
+  border-left: 5px solid var(--danger-color);
+}
+.sidebar-nav-link:active {
+  color: var(--danger-color);
+  background: var(--light-second-color);
+}
+.sidebar-nav-link:active div {
+  border-left: 5px solid var(--danger-color);
+}
+.sidebar-expand .sidebar {
+  width: 250px !important;
+}
+.sidebar-expand .main {
+  margin-left: 260px !important;
+}
+/*End Sidebar Area*/
+/*Start Main Area*/
+.main {
+  padding: 0px 0px 0px 25px;
+  margin-left: 60px;
+  background-color: var(--main-bg-color);
+  transition: margin-left 0.5s;
+}
+/*End Mian Area*/
