@@ -57,6 +57,14 @@
 .bg-danger {
   background: var(--danger-color);
 }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+[class*="col-"] {
+  padding: 10px;
+}
 /* width */
 ::-webkit-scrollbar {
   width: 5px;
@@ -93,9 +101,10 @@ body {
 .header {
   display: flex;
   box-shadow: var(--box-shadow);
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   padding: 15px;
   z-index: 10;
   align-items: center;
@@ -261,7 +270,7 @@ body {
   position: fixed;
   overflow: hidden;
   z-index: 100;
-  margin-top: -1px;
+  margin-top: 1px;
   z-index: 1;
   box-shadow: var(--box-shadow);
   transition: width 0.5s;
@@ -315,17 +324,52 @@ body {
 }
 .sidebar-expand .main {
   margin-left: 260px !important;
-  margin-top: 10px;
 }
 /*End Sidebar Area*/
 /*Start Main Area*/
 .main {
-  padding: 0px 0px 0px 25px;
   margin-left: 70px;
-  margin-top: 10px;
+  margin-top: 75px;
   margin-right: 10px;
-  background-color: var(--main-bg-color);
   transition: margin-left 0.5s;
   z-index: 10;
+}
+.counter {
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+}
+.card {
+  background-color: var(--main-bg-color);
+  color: var(--main-color);
+  padding: 15px;
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+}
+.card-header {
+  position: relative;
+  border-bottom: 1px solid var(--second-bg-color);
+  padding-bottom: 10px;
+}
+.card-header i {
+  color: var(--main-color);
+  position: absolute;
+  right: 30px;
+  top: 8%;
+  cursor: pointer;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+table td {
+  border-top: 1px solid var(--second-bg-color);
+  padding: 15px;
+}
+table th {
+  border-top: 1px solid var(--second-bg-color);
+  text-align: left;
+  padding: 15px 12px;
 }
 /*End Mian Area*/
