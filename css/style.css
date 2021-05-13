@@ -87,6 +87,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: "Poppins", sans-serif;
+  background-color: var(--second-bg-color);
 }
 /*Start Header Arera*/
 .header {
@@ -96,7 +97,9 @@ body {
   top: 0;
   left: 0;
   padding: 15px;
+  z-index: 10;
   align-items: center;
+  background-color: var(--main-bg-color);
 }
 .header .navbar {
   display: flex;
@@ -132,13 +135,14 @@ body {
   padding: 12px;
   border-radius: 30px;
   border: none;
-  background-color: var(--light-second-background);
+  background-color: var(--second-bg-color);
 }
 .header .serch-area a.search-btn {
   text-decoration: none;
   position: absolute;
-  top: 28%;
+  top: 24%;
   right: 21%;
+  color: var(--second-color);
 }
 .header .nav-item img.profile {
   width: 35px;
@@ -161,13 +165,14 @@ body {
   flex-direction: column;
   box-shadow: var(--box-shadow);
   right: 6%;
-  top: 100%;
+  top: 102%;
   max-width: 300px;
   max-height: 500px;
   align-items: center;
   padding: 10px;
   margin: 0px;
-  background-color: white;
+  background-color: var(--main-bg-color);
+  z-index: 9999;
 }
 .dropdown-expand {
   display: flex !important;
@@ -188,6 +193,7 @@ body {
   align-items: center;
   text-decoration: none;
   padding-top: 10px;
+  color: var(--second-color);
 }
 .header .dropdown-menu-link i {
   font-size: 16px;
@@ -201,11 +207,13 @@ body {
   margin: 0px;
   padding-left: 15px;
   line-height: 16px;
+  color: var(--second-color);
 }
 .header .dropdown-menu-link span span {
   font-size: 10px;
   margin: 0px;
   padding: 0px;
+  color: var(--second-color);
 }
 .notification-header {
   border-bottom: 1px solid #7274753d;
@@ -217,6 +225,7 @@ body {
   font-size: 20px;
   font-weight: 400;
   padding: 10px 0px;
+  color: var(--second-color);
 }
 .all-notification {
   width: 100%;
@@ -227,7 +236,7 @@ body {
 }
 .all-notification a {
   text-decoration: none;
-  color: var(--light-color);
+  color: var(--second-color);
   font-size: 18px;
   font-weight: 400;
   display: block;
@@ -248,11 +257,12 @@ body {
 .sidebar {
   width: 60px;
   height: 100vh;
-  background-color: var(--light-background);
+  background-color: var(--main-bg-color);
   position: fixed;
   overflow: hidden;
   z-index: 100;
-  margin-top: 2px;
+  margin-top: -1px;
+  z-index: 1;
   box-shadow: var(--box-shadow);
   transition: width 0.5s;
 }
@@ -305,13 +315,17 @@ body {
 }
 .sidebar-expand .main {
   margin-left: 260px !important;
+  margin-top: 10px;
 }
 /*End Sidebar Area*/
 /*Start Main Area*/
 .main {
   padding: 0px 0px 0px 25px;
-  margin-left: 60px;
+  margin-left: 70px;
+  margin-top: 10px;
+  margin-right: 10px;
   background-color: var(--main-bg-color);
   transition: margin-left 0.5s;
+  z-index: 10;
 }
 /*End Mian Area*/

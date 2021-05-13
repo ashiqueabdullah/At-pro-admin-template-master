@@ -12,7 +12,7 @@
     <!--  Responsive css file  -->
     <link rel="stylesheet" href="./css/responsive.css" />
   </head>
-  <body class="scrollbar-overlay">
+  <body class="scrollbar-overlay light">
     <!--  ======================= Start Header Area ============================== -->
     <div class="header">
       <ul class="navbar">
@@ -23,7 +23,18 @@
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link">
-            <img src="asset/img/AT-pro-black.png" alt="" width="120" />
+            <img
+              src="asset/img/AT-pro-black.png"
+              alt=""
+              width="120"
+              class="logo logo-light"
+            />
+            <img
+              src="asset/img/AT-pro-white.png"
+              alt=""
+              width="120"
+              class="logo logo-dark"
+            />
           </a>
         </li>
       </ul>
@@ -33,7 +44,10 @@
       </form>
       <ul class="navbar nav-right">
         <li class="nav-item">
-          <a href="#" class="nav-link"><i class="fas fa-moon"></i></a>
+          <a href="#" class="nav-link"
+            ><i class="fas fa-moon dark-icon" onclick="switchTheme()"></i>
+            <i class="fas fa-sun light-icon" onclick="switchTheme()"></i
+          ></a>
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link dropdown"
